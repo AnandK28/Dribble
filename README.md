@@ -28,118 +28,115 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 ```
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dress Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Dribble Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-danger" href="#">Dress Shop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<body class="d-flex flex-column" style="height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dribble Clone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#collection">Collection</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary me-2">Sign In</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary">Sign Up</button>
+                    </li>
                 </ul>
             </div>
-            <a class="btn btn-outline-light me-2" href="#">Sign in</a>
-            <a class="btn btn-outline-light me-2" href="#">Sign Up</a>
-            <input type="search" class="form-control w-auto" placeholder="Search" style="margin: 20px;">
         </div>
     </nav>
 
-    <section id="home" class="bg-light py-5" style="height: 45vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <h1 class="display-4 fw-bold">Discover Your Perfect Look</h1>
-                    <p class="my-3">Explore our collection of elegant and trendy dresses for every occasion.</p>
-                    <button class="btn btn-secondary me-2">Shop Now</button>
-                    <button class="btn btn-primary">Learn More</button>
-                </div>
-                <div class="col-md-6 text-center" height="100">
-                    <img src="fa1.jpg" class="img-fluid" alt="Fashionable Dresses" style="height: 45vh;">
-                </div>
+    <div class="container-fluid mt-5 flex-grow-1">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Welcome to Dribble Clone</h1>
+                <p>Explore stunning designs and showcase your creative projects.</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            <div class="col-md-6">
+                <img src="" class="img-fluid" alt="">
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="collection" class="py-5">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <h2 class="fw-bold">Our Collection</h2>
-                </div>
-                <div class="col-md-4 text-center">
-                    <button class="btn btn-outline-dark">New Arrivals</button>
-                    <button class="btn btn-outline-dark">Best Sellers</button>
+    <div class="container-fluid mt-5 flex-grow-1">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="fa2.jpg" class="card-img-top" alt="White Frock" style="height: 400px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">White Frock</h5>
+                        <p class="card-text">Price: ₹5000</p>
+                    </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card" height="100">
-                        <img src="fa2.jpg" class="card-img-top" alt="Dress 1">
-                        <div class="card-body text-center">
-                            <p class="card-text mb-0">Elegant Evening Gown</p>
-                            <p class="text-muted">$120.00</p>
-                        </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="fa3.jpg" class="card-img-top" alt="Sun Dress" style="height: 400px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sun Dress</h5>
+                        <p class="card-text">Price: ₹7500</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card" height="100">
-                        <img src="fa3.jpg" class="card-img-top" alt="Dress 2">
-                        <div class="card-body text-center">
-                            <p class="card-text mb-0">Casual Summer Dress</p>
-                            <p class="text-muted">$80.00</p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="fa4.jpg" class="card-img-top" alt="Black Frock" style="height: 400px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Frock</h5>
+                        <p class="card-text">Price: ₹10000</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card" height="100">
-                        <img src="fa4.jpg" class="card-img-top" alt="Dress 3">
-                        <div class="card-body text-center">
-                            <p class="card-text mb-0">Classic Black Dress</p>
-                            <p class="text-muted">$100.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="card" height="100">
-                        <img src="fa5.jpg" class="card-img-top" alt="Dress 4">
-                        <div class="card-body text-center">
-                            <p class="card-text mb-0">Floral Maxi Dress</p>
-                            <p class="text-muted">$95.00</p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="fa5.jpg" class="card-img-top" alt="Flower Frock" style="height: 400px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Flower Frock</h5>
+                        <p class="card-text">Price: ₹8000</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p class="mb-0">Designed and developed by Anand K (24900721)</p>
-        </div>
+    <footer class="bg-light text-center py-3 mt-auto" style="width: 100%; max-width: 90%; margin: 0 auto;">
+        <p>DESIGNED AND DEVELOPED BY ANAND K 24900721</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 ```
 
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/e088a8d7-8577-4920-93db-8cd3509a5a41)
-![image](https://github.com/user-attachments/assets/889349be-762c-4df6-a9e9-38d561f2b4bd)
+
+![image](https://github.com/user-attachments/assets/9b5609ae-c4af-4511-8cc8-c15dea60a20f)
+
 
 
 
