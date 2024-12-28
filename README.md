@@ -138,8 +138,9 @@ Publish the website in the LocalHost.
 
 
 ## OUTPUT:
-![Uploading image.png…]()
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/e088a8d7-8577-4920-93db-8cd3509a5a41)
+![image](https://github.com/user-attachments/assets/889349be-762c-4df6-a9e9-38d561f2b4bd)
+
 
 
 
